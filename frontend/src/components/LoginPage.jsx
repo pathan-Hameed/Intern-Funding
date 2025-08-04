@@ -11,7 +11,7 @@ const LoginPage = () => {
   return (
     <div style={styles.container}>
       <div style={styles.loginBox}>
-        <h2>Intern Portal Login</h2>
+        <h2 style={styles.h2}>Intern Portal Login</h2>
         <input type="text" placeholder="Username" style={styles.input} />
         <input type="password" placeholder="Password" style={styles.input} />
         <button onClick={handleLogin} style={styles.button}>
@@ -38,6 +38,11 @@ const styles = {
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
     textAlign: "center",
   },
+  h2: {
+    marginBottom: "20px",
+    color: "black",
+    backgroundColor: "white",
+  },
   input: {
     display: "block",
     width: "250px",
@@ -45,6 +50,7 @@ const styles = {
     margin: "10px 0",
     border: "1px solid #ccc",
     borderRadius: "4px",
+    color: "white",
   },
   button: {
     width: "100%",

@@ -9,10 +9,11 @@ import { Link } from 'react-router-dom';
 const DashboardPage = () => {
   const [internData, setInternData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const API_URL = 'https://intern-funding-api.onrender.com';
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/intern-data")
+      .get(`${API_URL}/api/intern-data`)
       .then((response) => {
         setInternData(response.data);
         setLoading(false);

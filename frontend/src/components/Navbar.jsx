@@ -15,7 +15,7 @@ export default function Navbar() {
             <a href="/dashboard" style={style.link} onMouseOver={(e) => e.target.style.textDecoration = style.linkHover.textDecoration} onMouseOut={(e) => e.target.style.textDecoration = 'none'}>Dashboard</a>
         </div>
         <button  onClick={handleLoginout} style={style.button} onMouseOver={(e) => e.target.style.backgroundColor = style.buttonHover.backgroundColor} onMouseOut={(e) => e.target.style.backgroundColor = '#61dafb'}>
-            <span style={style.buttonText} onMouseOver={(e) => e.target.style.color = style.buttonTextHover.color} onMouseOut={(e) => e.target.style.color = 'white'}>Logout</span>
+            <span style={style.buttonText}>Logout</span>
         </button>
     </div>
   )
@@ -55,18 +55,12 @@ const style = {
         border: 'none',
         borderRadius: '5px',
         cursor: 'pointer',
-        color: '#282c34'
-    },
-    buttonHover: {
-        backgroundColor: '#21a1f1'
+        color: 'black'
     },
     buttonText: {
         fontSize: '16px',
         fontWeight: 'bold',
+        color: 'black',
         backgroundColor: 'transparent',
     },
-    buttonTextHover: {
-        color: '#282c34'
-    },
-    
 }

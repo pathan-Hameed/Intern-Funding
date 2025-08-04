@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // To link back to the dashboard
+import { Link } from 'react-router-dom'; 
 
 const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const API_URL = 'https://intern-funding-api.onrender.com';
   useEffect(() => {
-    axios.get('http://localhost:3001/api/leaderboard')
+    axios.get(`${API_URL}/api/leaderboard`)
       .then(response => {
         setLeaderboard(response.data);
         setLoading(false);
