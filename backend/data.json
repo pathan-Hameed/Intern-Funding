@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "internName": "Chandra Kumar",
+      "referralCode": "chandra2025",
+      "donationsRaised": 420
+    },
+    {
+      "id": 2,
+      "internName": "Priya Sharma",
+      "referralCode": "priya2025",
+      "donationsRaised": 750
+    },
+    {
+      "id": 3,
+      "internName": "Amit Singh",
+      "referralCode": "amit2025",
+      "donationsRaised": 150
+    },
+    {
+      "id": 4,
+      "internName": "Sunita Rao",
+      "referralCode": "sunita2025",
+      "donationsRaised": 580
+    }
+  ]
